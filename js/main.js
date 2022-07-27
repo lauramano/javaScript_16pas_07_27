@@ -5,15 +5,20 @@ const user1 = {
     lastName: 'Petraitis',
     age: 35,
     salary: 55000,
+    getMonthlyPay: function(){
+        const monthlyPay = (this.salary / 12).toFixed(2);
+        console.log(`${this.firstNmae} menesinis atlygis: 💰 ${monthlyPay} `);
+        },
     fullName: function (){
            console.log(`${this.firstNmae} ${this.lastName}`);
 },
 };
 user1.fullName();
+user1.getMonthlyPay();
 //  prideti metoda, paskaiciuoti menesini atlyginima getMonthlyPay()
 
 const getMonthlyPay = function(someObj){
-console.log(`${someObj.salary / 12 }`);
+console.log(`${someObj.salary / 12 }`);   // Pati sugalvojau :)
 };
 getMonthlyPay(user1);
 
