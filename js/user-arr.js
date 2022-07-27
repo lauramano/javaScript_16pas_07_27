@@ -70,3 +70,15 @@ console.log('Menesiniai atlyginimai vienam masyve', menesiniaiArr);
 
 // grazinti nauja objektu masyva, kuriame butu tik vardas ir menesinis atlyginimas
 
+const userArrNameMen = userArr.map((uObj) => {
+return {
+    firstName: uObj.firstName,
+    monthlyPay: uObj.getMonthlyPay(),
+};
+});
+console.log(userArrNameMen);
+
+console.log('men atl', menesiniaiArr );
+//  Turime masyva "menesiniaiArr" kur pateikti atlyginimai.
+// reikia su juo paskaiciuoti vidurki.
+
